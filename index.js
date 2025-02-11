@@ -56,20 +56,10 @@ const flight = {
   document.body.innerHTML += 'Země odletu: ' + flight.countryFrom.name + '</br>' + 'Země příletu: ' + flight.countryTo.name;
 
   //2
-  const baglimitMax = {
-    hand_widthMax: 20,
-    hand_heightMax: 40,
-    hand_lengthMax: 55,
-    hand_weightMax: 10,
-    hold_widthMax: 81,
-    hold_heightMax: 119,
-    hold_lengthMax: 119,
-    hold_dimensions_sumMax: 319,
-    hold_weightMax: 20,
-  };
+  const baglimitMax = flight.baglimit
 
 //3
-document.body.innerHTML += '<p>Povolené rozměry příručního zavazadla:' + '</br>' + 'Šířka: ' + baglimitMax.hand_widthMax + ' cm' + '</br>' + 'Výška: ' + baglimitMax.hand_heightMax + ' cm' + '</br>' + 'Délka: ' + baglimitMax.hand_lengthMax + ' cm' + '</br>' + 'Váha: ' + baglimitMax.hand_weightMax + ' kg' + '</p>';
+document.body.innerHTML += '<p>Povolené rozměry příručního zavazadla:' + '</br>' + 'Šířka: ' + baglimitMax.hand_width + ' cm' + '</br>' + 'Výška: ' + baglimitMax.hand_height + ' cm' + '</br>' + 'Délka: ' + baglimitMax.hand_length + ' cm' + '</br>' + 'Váha: ' + baglimitMax.hand_weight + ' kg' + '</p>';
 
 //4
 document.body.innerHTML += '<p>Cena za druhé zavazadlo: ' + Math.ceil(flight.bags_price[2]) + ' EUR' + '</p>';
